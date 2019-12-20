@@ -208,9 +208,19 @@ header .navigation {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  header .navigation {
+    flex-direction: column;
+  }
+}
 header .navigation img {
-  width: 4.4%;
+  width: 75px;
   padding: 0 0 0 2.5rem;
+}
+@media (max-width: 500px) {
+  header .navigation img {
+    display: none;
+  }
 }
 header .navigation img:hover {
   color: #ffffff;
@@ -223,6 +233,12 @@ header .navigation h1 {
   width: 11.8%;
   padding-left: 2rem;
 }
+@media (max-width: 500px) {
+  header .navigation h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
 header .navigation nav {
   display: flex;
   justify-content: space-around;
@@ -234,7 +250,7 @@ header .navigation nav {
 }
 @media (max-width: 500px) {
   header .navigation nav {
-    width: 90%;
+    width: 100%;
   }
 }
 header .navigation nav a {
@@ -255,6 +271,12 @@ header .topButtons {
   height: 6.2rem;
   width: 19.1%;
 }
+@media (max-width: 500px) {
+  header .topButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 header .topButtons .loginBtn {
   font-size: 1.8rem;
   color: #46d2a3;
@@ -263,6 +285,11 @@ header .topButtons .loginBtn {
   height: 4rem;
   border: none;
   text-align: center;
+}
+@media (max-width: 500px) {
+  header .topButtons .loginBtn {
+    width: 100%;
+  }
 }
 header .topButtons .loginBtn:hover {
   background: #46d2a3;
@@ -276,6 +303,11 @@ header .topButtons .registerBtn {
   border: none;
   background-color: #46d2a3;
   text-align: center;
+}
+@media (max-width: 500px) {
+  header .topButtons .registerBtn {
+    width: 100%;
+  }
 }
 header .topButtons .registerBtn:hover {
   background: #ffffff;
