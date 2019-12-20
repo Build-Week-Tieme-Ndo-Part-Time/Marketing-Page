@@ -1,0 +1,85 @@
+// Navigation code here
+header{
+    display:flex;
+    flex-direction: row;
+    height: 5.8rem;
+    width:100%;
+
+    .navigation{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        
+        img {
+            width: 4.4%;
+            padding: 0 0 0 2.5rem;
+        }
+
+        img:hover{
+            .navHover(@white);
+            .shake
+        }
+
+        h1{
+            font-size: 3rem;
+            background-color: @white;
+            width:11.8%;
+            padding-left:2rem;
+        }
+        
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            width:64.7%;
+            background-color: @brown;
+            height:6.2rem;   
+            // border: 1px red solid;         
+
+            @media @phone{
+            width: 90%;
+            }
+            
+            a{
+            text-decoration: none;
+            color: @green;
+            font-size: 1.7rem ;
+            }
+            a:hover{
+                .navHover(@white);
+                .shake
+            }
+        }
+    }
+    .topButtons{
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        background-color: @brown;
+        height: 6.2rem;
+        width:19.1%;
+        // border: 1px red solid;
+
+        .loginBtn{
+            .whiteBtn-params(@green,@white)
+        }
+
+        .loginBtn:hover{
+            .hover-specs(@green,@white);
+          }
+
+
+        .registerBtn{
+            .greenBtn-params(@white,@green)
+        }
+
+        .registerBtn:hover{
+            .hover-specs(@white,@green);
+          }
+
+    }
+    
+}
+

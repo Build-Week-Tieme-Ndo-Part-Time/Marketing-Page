@@ -1,0 +1,403 @@
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  10% {
+    transform: translate(0px, -1px) rotate(0deg);
+  }
+  20% {
+    transform: translate(0px, -1px) rotate(1deg);
+  }
+  30% {
+    transform: translate(0px, 1px) rotate(2deg);
+  }
+  40% {
+    transform: translate(0px, 1px) rotate(3deg);
+  }
+  50% {
+    transform: translate(0px, -1px) rotate(4deg);
+  }
+  60% {
+    transform: translate(0px, -1px) rotate(5deg);
+  }
+  70% {
+    transform: translate(0px, 1px) rotate(4deg);
+  }
+  80% {
+    transform: translate(0px, 1px) rotate(3deg);
+  }
+  90% {
+    transform: translate(0px, -1px) rotate(2deg);
+  }
+  100% {
+    transform: translate(0px, -1px) rotate(1deg);
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Montserrat';
+  color: #232328;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat';
+  color: #232328;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  height: 5.8rem;
+  width: 100%;
+}
+header .navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+header .navigation img {
+  width: 4.4%;
+  padding: 0 0 0 2.5rem;
+}
+header .navigation img:hover {
+  color: #ffffff;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+header .navigation h1 {
+  font-size: 3rem;
+  background-color: #ffffff;
+  width: 11.8%;
+  padding-left: 2rem;
+}
+header .navigation nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 64.7%;
+  background-color: #4e4e4e;
+  height: 6.2rem;
+}
+@media (max-width: 500px) {
+  header .navigation nav {
+    width: 90%;
+  }
+}
+header .navigation nav a {
+  text-decoration: none;
+  color: #46d2a3;
+  font-size: 1.7rem;
+}
+header .navigation nav a:hover {
+  color: #ffffff;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+header .topButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4e4e4e;
+  height: 6.2rem;
+  width: 19.1%;
+}
+header .topButtons .loginBtn {
+  font-size: 1.8rem;
+  color: #46d2a3;
+  width: 13rem;
+  background-color: #ffffff;
+  height: 4rem;
+  border: none;
+  text-align: center;
+}
+header .topButtons .loginBtn:hover {
+  background: #46d2a3;
+  color: #ffffff;
+}
+header .topButtons .registerBtn {
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 13rem;
+  height: 4rem;
+  border: none;
+  background-color: #46d2a3;
+  text-align: center;
+}
+header .topButtons .registerBtn:hover {
+  background: #ffffff;
+  color: #46d2a3;
+}
+.upperFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 85%;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px black solid;
+}
+.upperFooter nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 30%;
+  height: 6.2rem;
+}
+.upperFooter nav a {
+  text-decoration: none;
+  color: #232328;
+  font-size: 1.7rem;
+}
+.upperFooter nav a:hover {
+  color: #232328;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.upperFooter .staffBtn {
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 13rem;
+  height: 4rem;
+  border: none;
+  background-color: #46d2a3;
+  text-align: center;
+}
+.upperFooter .staffBtn:hover {
+  background: #ffffff;
+  color: #46d2a3;
+}
+footer {
+  margin-bottom: 15rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+footer p {
+  padding-top: 2rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 24rem;
+  background-image: url(/img/bbh-singapore-d2hs0gRFCpQ-unsplashOPACITY\ CHANGED.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 64%;
+  height: 100rem;
+}
+section img {
+  width: 30rem;
+}
+section img:hover {
+  color: #ffffff;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+section p {
+  font-size: 6rem;
+  color: #232328;
+}
+section h1 {
+  font-size: 5rem;
+  color: #232328;
+}
+section .joinToday {
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 19rem;
+  height: 5rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #46d2a3;
+  text-align: center;
+}
+section .joinToday:hover {
+  background: #ffffff;
+  color: #46d2a3;
+}
+.content .upper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.content .upper img {
+  width: 50%;
+  height: 100%;
+}
+.content .upper .topContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.content .lower {
+  display: flex;
+  padding-bottom: 12rem;
+}
+.content .lower img {
+  width: 50%;
+  height: 100%;
+}
+.content .lower .bottomContent {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 3rem;
+}

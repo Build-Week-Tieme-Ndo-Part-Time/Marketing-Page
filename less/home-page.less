@@ -1,0 +1,78 @@
+section{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 24rem;
+    background-image: url(/img/bbh-singapore-d2hs0gRFCpQ-unsplashOPACITY\ CHANGED.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: 50% 64%;
+    height: 100rem;
+
+    img{
+        width: 30rem;
+    }
+    img:hover{
+        .navHover(@white);
+        .shake
+    }
+
+    p{
+        font-size: 6rem;
+        color: @black;
+    }
+
+    h1{
+        font-size: 5rem;
+        color: @black;
+    }
+
+    .joinToday{
+        .joinBtn-params(@white,@green)
+    }
+
+    .joinToday:hover{
+        .hover-specs(@white,@green);
+    }
+   
+}
+
+.content{
+    
+    
+    .upper{
+        display:flex;
+        flex-direction: row-reverse;
+        img {
+            width: 50%;
+            height: 100%;
+          }
+          
+          .topContent{
+              display:flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding: 3rem;
+            }
+    }
+
+    .lower{
+        display:flex;
+        padding-bottom:12rem;
+        img {
+            width: 50%;
+            height: 100%;
+          }
+
+          .bottomContent{
+            display:flex;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 3rem;
+
+
+        }
+    }
+}
+

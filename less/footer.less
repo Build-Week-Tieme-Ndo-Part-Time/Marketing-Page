@@ -1,0 +1,50 @@
+// Footer Styles
+.upperFooter{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width:85%;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom:1px black solid;
+  
+
+  nav{
+      display:flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      width:30%;
+      height:6.2rem;
+
+      
+      a{
+          text-decoration: none;
+          color: @black;
+          font-size: 1.7rem ;
+          }
+          a:hover{
+            .navHover(@black);
+            .shake
+        }
+  }
+
+  .staffBtn{
+      .staffBtn-params(@white,@green)
+  }
+
+  .staffBtn:hover{
+      .hover-specs(@white,@green);
+    }  
+}
+footer{
+    margin-bottom: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    p{
+        padding-top: 2rem;
+    }
+}
