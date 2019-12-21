@@ -121,3 +121,56 @@ section{
     }
 }
 
+
+//ABOUT US PAGE
+
+.emps{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-left:10rem;
+    margin-right:10rem;
+        @media @phone {
+            flex-direction: column;
+            flex-wrap:none;
+            // justify-content: center;
+            // align-content: center;
+            align-items: center;
+            margin-top:10rem;
+            margin-left:0rem;
+            margin-right:0rem;
+        }
+   
+
+    .empNum1{
+        display:flex;
+        flex-direction:row ;
+        padding-top:5rem;
+        width: 50%;
+        @media @phone {
+            flex-direction: column;
+            width:100%;
+            align-items: center;
+            }
+
+        img{
+            width: 25rem;
+            border-radius: 180px;
+            box-shadow: 10px 10px 25px @green;
+        }
+        img:hover{
+            .shake
+        }
+
+        .info{
+            display:flex;
+            flex-direction:column ;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem;
+            
+         
+        
+        }
+    }
+} 
