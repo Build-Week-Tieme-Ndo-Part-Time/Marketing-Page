@@ -1,180 +1,117 @@
-section{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 8rem;
-    padding-bottom: 24rem;
-    background-image: url(/img/bbh-singapore-d2hs0gRFCpQ-unsplashOPACITY\ CHANGED.jpeg) ;
-    background-repeat: no-repeat;
-    background-position: 50% 64%;
-    height: 100rem;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 24rem;
+  background-image: url(/img/bbh-singapore-d2hs0gRFCpQ-unsplashOPACITY\CHANGED.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 64%;
+  height: 100rem;
 
-        @media @phone {
-        padding-top: 18rem;
-        padding-bottom: 8rem;
-        height: 50rem;
-        background-position: 50% 100%;
-            
-        }
+  @media @phone {
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+    height: 50rem;
+    background-position: 50% 100%;
+  }
 
-    img{
-        width: 30rem;
-        @media @phone {
-            width:10rem;
-        }
-    }
-    img:hover{
-        .navHover(@white);
-        .shake
-    }
-
-    p{
-        font-size: 6rem;
-        color: @black;
-        @media @phone {
-            font-size: 3rem;
-        }
-    }
-
-    h1{
-        font-size: 5rem;
-        color: @black;
-        @media @phone {
-            font-size: 2rem;
-        }
-    }
-
-    .joinToday{
-        .joinBtn-params(@white,@green)
-    }
-
-    .joinToday:hover{
-        .hover-specs(@white,@green);
-    }
-   
-}
-
-.content{
+  img {
+    width: 30rem;
     @media @phone {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0rem 5rem;
-        } 
-        
-    .upper{
-        display:flex;
-        flex-direction: row-reverse;
-            @media @phone {
-                flex-direction: column;
-            }
-        
-        img {
-            width: 50%;
-            height: 100%;
-                @media @phone {
-                width: 100%;
-                }
-            }
-          
-          .topContent{
-            display:flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 3rem;
-                @media @phone {
-                padding: 0;             
-                }
-            }
+      width: 10rem;
     }
+  }
+  img:hover {
+    .navHover(@white);
+    .shake;
+  }
 
-    .lower{
-        display:flex;
-        padding-bottom:12rem;
-            @media @phone {
-                flex-direction: column;
-                padding-bottom:0rem;
-
-            }
-
-        img {
-            width: 50%;
-            height: 100%;
-                @media @phone {
-                    width: 100%;
-                    }
-          }
-
-          .bottomContent{
-            display:flex;
-            justify-content: space-around;
-            flex-direction: column;
-            padding: 3rem;
-                @media @phone {
-                    padding: 0;             
-                    }
-
-
-        }
+  p {
+    font-size: 6rem;
+    color: @black;
+    @media @phone {
+      font-size: 3rem;
     }
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: @black;
+    @media @phone {
+      font-size: 2rem;
+    }
+  }
+
+  .joinToday {
+    .joinBtn-params(@white, @green);
+  }
+
+  .joinToday:hover {
+    .hover-specs(@white, @green);
+  }
 }
 
+.content {
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 5rem;
+  }
 
-//ABOUT US PAGE
-
-.emps{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    margin-left:10rem;
-    margin-right:10rem;
-        @media @phone {
-            flex-direction: column;
-            flex-wrap:none;
-            // justify-content: center;
-            // align-content: center;
-            align-items: center;
-            margin-top:10rem;
-            margin-left:0rem;
-            margin-right:0rem;
-        }
-
-        @media @tinyPhone{
-            padding: 10rem;
-        }
-   
-
-    .empNum1{
-        display:flex;
-        flex-direction:row ;
-        padding-top:5rem;
-        width: 50%;
-        @media @phone {
-            flex-direction: column;
-            width:100%;
-            align-items: center;
-            }
-
-        img{
-            width: 25rem;
-            border-radius: 180px;
-            box-shadow: 10px 10px 25px @green;
-        }
-        img:hover{
-            .shake
-        }
-
-        .info{
-            display:flex;
-            flex-direction:column ;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3rem;
-            
-         
-        
-        }
+  .upper {
+    display: flex;
+    flex-direction: row-reverse;
+    @media @phone {
+      flex-direction: column;
     }
-} 
+
+    img {
+      width: 50%;
+      height: 100%;
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    .topContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 3rem;
+      @media @phone {
+        padding: 0;
+      }
+    }
+  }
+
+  .lower {
+    display: flex;
+    padding-bottom: 12rem;
+    @media @phone {
+      flex-direction: column;
+      padding-bottom: 0rem;
+    }
+
+    img {
+      width: 50%;
+      height: 100%;
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    .bottomContent {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 3rem;
+      @media @phone {
+        padding: 0;
+      }
+    }
+  }
+}

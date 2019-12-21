@@ -1,81 +1,79 @@
 // Footer Styles
-.upperFooter{
-  display:flex;
+.upperFooter {
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width:85%;
+  width: 85%;
   margin-left: 10rem;
   margin-right: 10rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  border-bottom:1px black solid;
+  border-bottom: 1px black solid;
+  @media @phone {
+    width: 100%;
+    margin: 0rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 30%;
+    height: 6.2rem;
     @media @phone {
-    width: 100%; 
-    margin: 0rem;   
+      width: 100%;
+      justify-content: space-around;
     }
-  
+    @media @tinyPhone {
+      flex-direction: column;
+      height: 10rem;
+      padding-top: 2rem;
+      margin-bottom: 3rem;
+      border-top: 1px black solid;
+    }
 
-  nav{
-      display:flex;
-      justify-content: space-between;
-      align-content: center;
-      align-items: center;
-      width:30%;
-      height:6.2rem;
-        @media @phone {
-            width: 100%; 
-            justify-content:space-around;   
-            }
-        @media @tinyPhone{
-          flex-direction: column;
-          height:10rem;
-          padding-top: 2rem;
-          margin-bottom: 3rem;
-          border-top:1px black solid;
-        }    
+    a {
+      text-decoration: none;
+      color: @green;
+      font-size: 1.7rem;
 
-      
-      a{
-          text-decoration: none;
-          color: @green;
-          font-size: 1.7rem ;
+      @media @tinyPhone {
+        padding-top: 1rem;
+      }
+    }
 
-          @media @tinyPhone{ 
-            padding-top: 1rem;          }
-          }
-          
-          a:hover{
-            .navHover(@black);
-            .shake
-             
-        }
+    a:hover {
+      .navHover(@black);
+      .shake;
+    }
   }
 
-  .staffBtn{
+  .staffBtn {
     @media @phone {
-        width: 100%;  
-        }
-    .staffBtn-params(@white,@green)
+      width: 100%;
+    }
+    .staffBtn-params(@white, @green);
   }
 
-  .staffBtn:hover{
-      .hover-specs(@white,@green);
-    }  
+  .staffBtn:hover {
+    .hover-specs(@white, @green);
+  }
 }
-footer{
-    margin-bottom: 15rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    @media @phone {
-        padding: 0;
-        margin: 0;
-        text-align: center;  
-        }
+footer {
+  margin-bottom: 15rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  @media @phone {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
 
-    p{
-        padding-top: 2rem;
-        @media @phone {
-            padding:0;   
-            }
+  p {
+    padding-top: 2rem;
+    @media @phone {
+      padding: 0;
     }
+  }
 }
