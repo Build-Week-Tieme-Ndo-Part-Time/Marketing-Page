@@ -473,12 +473,22 @@ section {
     background-position: 50% 100%;
   }
 }
+@media (max-width: 300px) {
+  section {
+    height: 2rem;
+  }
+}
 section img {
   width: 30rem;
 }
 @media (max-width: 500px) {
   section img {
     width: 10rem;
+  }
+}
+@media (max-width: 300px) {
+  section img {
+    display: none;
   }
 }
 section img:hover {
@@ -493,6 +503,18 @@ section p {
 @media (max-width: 500px) {
   section p {
     font-size: 3rem;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 300px) {
+  section p {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  section .logo {
+    display: flex;
+    flex-direction: row;
   }
 }
 section h1 {
@@ -504,6 +526,11 @@ section h1 {
     font-size: 2rem;
   }
 }
+@media (max-width: 300px) {
+  section h1 {
+    display: none;
+  }
+}
 section .joinToday {
   font-size: 1.8rem;
   color: #ffffff;
@@ -513,6 +540,11 @@ section .joinToday {
   border-radius: 7px;
   background-color: #46d2a3;
   text-align: center;
+}
+@media (max-width: 300px) {
+  section .joinToday {
+    display: none;
+  }
 }
 section .joinToday:hover {
   background: #ffffff;

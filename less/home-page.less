@@ -16,11 +16,19 @@ section {
     height: 50rem;
     background-position: 50% 100%;
   }
+  @media @tinyPhone {
+    height:2rem;
+  }
+
+  
 
   img {
     width: 30rem;
     @media @phone {
       width: 10rem;
+    }
+    @media @tinyPhone {
+      display:none
     }
   }
   img:hover {
@@ -33,6 +41,17 @@ section {
     color: @black;
     @media @phone {
       font-size: 3rem;
+      padding-left: 1rem;
+    }  
+    @media @tinyPhone {
+      display:none;
+    }
+  }
+
+  .logo {
+    @media @tinyPhone {
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -42,9 +61,15 @@ section {
     @media @phone {
       font-size: 2rem;
     }
+    @media @tinyPhone {
+      display:none;
+    }
   }
 
   .joinToday {
+    @media @tinyPhone {
+      display:none;
+    }
     .joinBtn-params(@white, @green);
   }
 
