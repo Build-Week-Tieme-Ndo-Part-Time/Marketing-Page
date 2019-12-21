@@ -238,6 +238,7 @@ header .navigation h1 {
   background-color: #ffffff;
   width: 11.8%;
   padding-left: 2rem;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   header .navigation h1 {
@@ -260,10 +261,23 @@ header .navigation nav {
     height: 3rem;
   }
 }
+@media (max-width: 300px) {
+  header .navigation nav {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    height: 12rem;
+  }
+}
 header .navigation nav a {
   text-decoration: none;
   color: #46d2a3;
   font-size: 1.7rem;
+}
+@media (max-width: 300px) {
+  header .navigation nav a {
+    padding-top: 1rem;
+  }
 }
 header .navigation nav a:hover {
   color: #ffffff;
@@ -282,6 +296,11 @@ header .topButtons {
   header .topButtons {
     flex-direction: column;
     width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  header .topButtons {
+    height: 8rem;
   }
 }
 header .topButtons .loginBtn {
@@ -351,10 +370,24 @@ header .topButtons .registerBtn:hover {
     justify-content: space-around;
   }
 }
+@media (max-width: 300px) {
+  .upperFooter nav {
+    flex-direction: column;
+    height: 10rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    border-top: 1px black solid;
+  }
+}
 .upperFooter nav a {
   text-decoration: none;
   color: #46d2a3;
   font-size: 1.7rem;
+}
+@media (max-width: 300px) {
+  .upperFooter nav a {
+    padding-top: 1rem;
+  }
 }
 .upperFooter nav a:hover {
   color: #232328;
@@ -547,6 +580,11 @@ section .joinToday:hover {
     margin-top: 10rem;
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+}
+@media (max-width: 300px) {
+  .emps {
+    padding: 10rem;
   }
 }
 .emps .empNum1 {

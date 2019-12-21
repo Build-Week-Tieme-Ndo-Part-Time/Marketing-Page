@@ -26,16 +26,28 @@
             width: 100%; 
             justify-content:space-around;   
             }
+        @media @tinyPhone{
+          flex-direction: column;
+          height:10rem;
+          padding-top: 2rem;
+          margin-bottom: 3rem;
+          border-top:1px black solid;
+        }    
 
       
       a{
           text-decoration: none;
           color: @green;
           font-size: 1.7rem ;
+
+          @media @tinyPhone{ 
+            padding-top: 1rem;          }
           }
+          
           a:hover{
             .navHover(@black);
             .shake
+             
         }
   }
 
