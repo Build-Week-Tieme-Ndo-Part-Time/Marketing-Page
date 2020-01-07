@@ -248,10 +248,10 @@ header .navigation img:hover {
   animation-iteration-count: infinite;
 }
 header .navigation h1 {
-  font-size: 3rem;
+  font-size: 1.7vw;
   background-color: #ffffff;
   width: 11.8%;
-  padding-left: 2rem;
+  padding-left: 1rem;
   text-decoration: none;
 }
 header .navigation h1 a {
@@ -263,6 +263,7 @@ header .navigation h1 a:hover {
 }
 @media (max-width: 500px) {
   header .navigation h1 {
+    font-size: 3rem;
     width: 100%;
     text-align: center;
   }
@@ -293,7 +294,17 @@ header .navigation nav {
 header .navigation nav a {
   text-decoration: none;
   color: #46d2a3;
-  font-size: 1.7rem;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  header .navigation nav a {
+    font-size: 2.3vw;
+  }
+}
+@media (max-width: 500px) {
+  header .navigation nav a {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 300px) {
   header .navigation nav a {
@@ -333,6 +344,14 @@ header .topButtons .loginBtn {
   border: none;
   text-align: center;
 }
+header .topButtons .loginBtn a {
+  text-decoration: none;
+  color: #46d2a3;
+}
+header .topButtons .loginBtn a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
 @media (max-width: 500px) {
   header .topButtons .loginBtn {
     width: 100%;
@@ -343,6 +362,7 @@ header .topButtons .loginBtn:hover {
   color: #ffffff;
 }
 header .topButtons .registerBtn {
+  text-decoration: none;
   font-size: 1.8rem;
   color: #ffffff;
   width: 13rem;
@@ -350,6 +370,14 @@ header .topButtons .registerBtn {
   border: none;
   background-color: #46d2a3;
   text-align: center;
+}
+header .topButtons .registerBtn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .topButtons .registerBtn a:hover {
+  text-decoration: none;
+  color: #46d2a3;
 }
 @media (max-width: 500px) {
   header .topButtons .registerBtn {
@@ -537,7 +565,7 @@ section h1 {
     display: none;
   }
 }
-section .joinToday {
+section button {
   font-size: 1.8rem;
   color: #ffffff;
   width: 19rem;
@@ -548,11 +576,28 @@ section .joinToday {
   text-align: center;
 }
 @media (max-width: 300px) {
-  section .joinToday {
+  section button {
     display: none;
   }
 }
-section .joinToday:hover {
+section button:hover {
+  background: #ffffff;
+  color: #46d2a3;
+}
+section button:focus {
+  outline: 0;
+}
+section button {
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 19rem;
+  height: 5rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #46d2a3;
+  text-align: center;
+}
+section button:hover {
   background: #ffffff;
   color: #46d2a3;
 }
@@ -624,6 +669,23 @@ section .joinToday:hover {
     padding: 0;
   }
 }
+.upperFooter button {
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 19rem;
+  height: 5rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #46d2a3;
+  text-align: center;
+}
+.upperFooter button:focus {
+  outline: 0;
+}
+.upperFooter button:hover {
+  background: #ffffff;
+  color: #46d2a3;
+}
 .emps {
   display: flex;
   flex-wrap: wrap;
@@ -631,7 +693,12 @@ section .joinToday:hover {
   margin-left: 10rem;
   margin-right: 10rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 300px) {
+  .emps {
+    padding: 10rem;
+  }
+}
+@media (max-width: 800px) {
   .emps {
     flex-direction: column;
     flex-wrap: none;
@@ -639,11 +706,6 @@ section .joinToday:hover {
     margin-top: 10rem;
     margin-left: 0rem;
     margin-right: 0rem;
-  }
-}
-@media (max-width: 300px) {
-  .emps {
-    padding: 10rem;
   }
 }
 .emps .empNum1 {

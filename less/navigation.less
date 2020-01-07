@@ -34,10 +34,10 @@ header {
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 1.7vw;
       background-color: @white;
       width: 11.8%;
-      padding-left: 2rem;
+      padding-left: 1rem;
       text-decoration: none;
       a {
         text-decoration: none;
@@ -47,6 +47,7 @@ header {
         }
       }
       @media @phone {
+        font-size: 3rem;
         width: 100%;
         text-align: center;
       }
@@ -76,7 +77,13 @@ header {
       a {
         text-decoration: none;
         color: @green;
-        font-size: 1.7rem;
+        font-size: 2rem;
+        @media @desktop{
+          font-size: 2.3vw;
+        }
+        @media @phone{
+          font-size: 2rem;
+        }
         @media @tinyPhone {
           padding-top: 1rem;
         }
@@ -106,6 +113,14 @@ header {
     }
 
     .loginBtn {
+      a {
+        text-decoration: none;
+        color: @green;
+        &:hover {
+          text-decoration: none;
+          color: @white;
+        }
+      }
       @media @phone {
         width: 100%;
       }
@@ -113,10 +128,20 @@ header {
     }
 
     .loginBtn:hover {
+      
       .hover-specs(@green, @white);
     }
 
     .registerBtn {
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: @white;
+        &:hover {
+          text-decoration: none;
+          color: @green;
+        }
+      }
       @media @phone {
         width: 100%;
       }
@@ -124,6 +149,7 @@ header {
     }
 
     .registerBtn:hover {
+      
       .hover-specs(@white, @green);
     }
   }

@@ -71,15 +71,30 @@ section {
     }
   }
 
-  .joinToday {
+  button {
     @media @tinyPhone {
       display:none;
     }
     .joinBtn-params(@white, @green);
   }
 
-  .joinToday:hover {
+  button:hover {
     .hover-specs(@white, @green);
+  }
+
+  button:focus {outline:0;}
+
+
+}
+
+section{ 
+  
+  button{
+  .joinBtn-params(@white, @green);
+  }
+
+ button:hover {
+  .hover-specs(@white, @green);
   }
 }
 
@@ -143,5 +158,19 @@ section {
         padding: 0;
       }
     }
+  }
+}
+
+
+
+.upperFooter {
+  button{
+  .joinBtn-params(@white, @green);
+}
+
+button:focus {outline:0;}
+
+button:hover {
+  .hover-specs(@white, @green);
   }
 }

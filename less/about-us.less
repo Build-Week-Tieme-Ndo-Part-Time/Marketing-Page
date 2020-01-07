@@ -4,7 +4,12 @@
   justify-content: center;
   margin-left: 10rem;
   margin-right: 10rem;
-  @media @phone {
+
+  @media @tinyPhone {
+    padding: 10rem;
+  }
+
+  @media @desktop {
     flex-direction: column;
     flex-wrap: none;
     // justify-content: center;
@@ -15,9 +20,7 @@
     margin-right: 0rem;
   }
 
-  @media @tinyPhone {
-    padding: 10rem;
-  }
+ 
 
   .empNum1 {
     display: flex;
