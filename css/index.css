@@ -443,21 +443,32 @@ header .topButtons .registerBtn:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
-.upperFooter .staffBtn {
+.upperFooter button {
   font-size: 1.8rem;
   color: #ffffff;
-  width: 13rem;
-  height: 4rem;
+  width: 19rem;
+  height: 5rem;
   border: none;
+  border-radius: 7px;
   background-color: #46d2a3;
   text-align: center;
 }
-@media (max-width: 500px) {
-  .upperFooter .staffBtn {
+@media (max-width: 300px) {
+  .upperFooter button {
     width: 100%;
+    border-radius: 0px;
   }
 }
-.upperFooter .staffBtn:hover {
+@media (max-width: 500px) {
+  .upperFooter button {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+.upperFooter button:focus {
+  outline: 0;
+}
+.upperFooter button:hover {
   background: #ffffff;
   color: #46d2a3;
 }
@@ -634,9 +645,22 @@ section button:hover {
   justify-content: space-around;
   padding: 3rem;
 }
+.content .upper .topContent h2 {
+  padding-top: 2rem;
+  padding-top: 0.5rem;
+}
+.content .upper .topContent p {
+  padding-top: 1rem;
+}
 @media (max-width: 500px) {
   .content .upper .topContent {
     padding: 0;
+  }
+  .content .upper .topContent h2 {
+    padding-top: 2rem;
+  }
+  .content .upper .topContent p {
+    padding-top: 2rem;
   }
 }
 .content .lower {
@@ -664,27 +688,22 @@ section button:hover {
   flex-direction: column;
   padding: 3rem;
 }
+.content .lower .bottomContent h2 {
+  padding-top: 2rem;
+}
+.content .lower .bottomContent p {
+  padding-top: 2rem;
+}
 @media (max-width: 500px) {
   .content .lower .bottomContent {
     padding: 0;
   }
-}
-.upperFooter button {
-  font-size: 1.8rem;
-  color: #ffffff;
-  width: 19rem;
-  height: 5rem;
-  border: none;
-  border-radius: 7px;
-  background-color: #46d2a3;
-  text-align: center;
-}
-.upperFooter button:focus {
-  outline: 0;
-}
-.upperFooter button:hover {
-  background: #ffffff;
-  color: #46d2a3;
+  .content .lower .bottomContent h2 {
+    padding-top: 2rem;
+  }
+  .content .lower .bottomContent p {
+    padding-top: 2rem;
+  }
 }
 .emps {
   display: flex;
@@ -695,7 +714,10 @@ section button:hover {
 }
 @media (max-width: 300px) {
   .emps {
-    padding: 10rem;
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 10rem;
   }
 }
 @media (max-width: 800px) {
@@ -746,4 +768,13 @@ section button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
+  text-align: center;
+}
+@media (max-width: 300px) {
+  .emps .empNum1 .info h2 {
+    font-size: 2.2vh;
+  }
+  .emps .empNum1 .info p {
+    font-size: 1.4vh;
+  }
 }

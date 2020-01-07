@@ -127,8 +127,26 @@ section{
       flex-direction: column;
       justify-content: space-around;
       padding: 3rem;
+      @media @tablet{
+        }
+
+      h2{
+        padding-top:2rem;
+        padding-top:.5rem;
+        @media @tablet{
+         }
+      }
+      p{
+        padding-top: 1rem;
+      }
       @media @phone {
         padding: 0;
+      h2{
+        padding-top:2rem;
+      }
+      p{
+        padding-top: 2rem;
+      }
       }
     }
   }
@@ -154,8 +172,20 @@ section{
       justify-content: space-around;
       flex-direction: column;
       padding: 3rem;
+      h2{
+        padding-top:2rem;
+      }
+      p{
+        padding-top: 2rem;
+      }
       @media @phone {
         padding: 0;
+      h2{
+        padding-top:2rem;
+      }
+      p{
+        padding-top: 2rem;
+      }
       }
     }
   }
@@ -163,14 +193,4 @@ section{
 
 
 
-.upperFooter {
-  button{
-  .joinBtn-params(@white, @green);
-}
 
-button:focus {outline:0;}
-
-button:hover {
-  .hover-specs(@white, @green);
-  }
-}

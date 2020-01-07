@@ -49,17 +49,25 @@
     }
   }
 
-  .staffBtn {
-    @media @phone {
-      width: 100%;
+  button{
+    .joinBtn-params(@white, @green);
+    @media @tinyPhone{
+      width:100%;
+      border-radius: 0px;
     }
-    .staffBtn-params(@white, @green);
+    @media @phone {
+      width:100%;
+      border-radius: 0px;
+    }
   }
-
-  .staffBtn:hover {
+  
+  button:focus {outline:0;}
+  
+  button:hover {
     .hover-specs(@white, @green);
   }
 }
+
 footer {
   margin-bottom: 15rem;
   padding-left: 10rem;
