@@ -5,32 +5,31 @@
   margin-left: 10rem;
   margin-right: 10rem;
 
-  @media @tinyPhone {
-    width:100%;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    padding-top: 10rem;
-  }
-
   @media @tablet {
     flex-direction: column;
     flex-wrap: none;
-    // justify-content: center;
-    // align-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 0rem;
     margin-left: 0rem;
     margin-right: 0rem;
   }
+  @media @phone {
+    margin-top: 10rem;
+  }
 
- 
+  @media @tinyPhone {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 20rem;
+  }
 
   .empNum1 {
     display: flex;
     flex-direction: row;
-    padding-top: 5rem;
+    margin-top: 7rem;
     width: 50%;
-    
+
     @media @phone {
       flex-direction: column;
       width: 100%;
@@ -38,14 +37,17 @@
     }
 
     img {
-      width: 25rem;
+      width: 120px;
+      height: 120px;
       border-radius: 180px;
       box-shadow: 10px 10px 25px @green;
       @media @phone {
-        width: 20rem;
+        width: 10rem;
+        height: 10rem;
       }
       @media @tinyPhone {
         width: 10rem;
+        height: 10rem;
       }
     }
     img:hover {
@@ -56,13 +58,21 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       padding: 3rem;
-      text-align:center;
-      @media @tinyPhone{
+      text-align: center;
+
+      h2 {
+        font-size: 2vh;
+      }
+      @media @phone {
+        width:100%;
+        align-items: center;
         h2 {
-          font-size:2.2vh;
+        font-size: 2.2vh;
         }
+      }
+      @media @tinyPhone {
         p {
           font-size: 1.4vh;
         }

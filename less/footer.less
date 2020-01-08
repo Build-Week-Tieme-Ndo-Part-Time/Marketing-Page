@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 85%;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  align-items: center;
+  width: 100%;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px black solid;
@@ -13,13 +12,17 @@
     width: 100%;
     margin: 0rem;
   }
-
+  .aButton{
+    @media @phone{
+      width:100%
+    }
+  }
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
     height: 6.2rem;
     @media @phone {
       width: 100%;
@@ -50,15 +53,13 @@
   }
 
   button{
+    font-family:Montserrat;
     .joinBtn-params(@white, @green);
-    @media @tinyPhone{
-      width:100%;
-      border-radius: 0px;
-    }
     @media @phone {
       width:100%;
       border-radius: 0px;
     }
+    
   }
   
   button:focus {outline:0;}

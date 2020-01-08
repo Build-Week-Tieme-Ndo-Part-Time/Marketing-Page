@@ -7,7 +7,7 @@ header {
 
   @media @phone {
     flex-direction: column;
-    height: 10px;
+    height: 1px;
   }
 
   .navigation {
@@ -23,8 +23,8 @@ header {
     img {
       width: 75px;
       padding: 0 0 0 2.5rem;
-      @media @phone {
-        display: none;
+      @media @tablet {
+        display:none;
       }
     }
 
@@ -58,13 +58,14 @@ header {
       justify-content: space-around;
       align-content: center;
       align-items: center;
-      width: 64.7%;
+      width: 61.7%;
       background-color: @brown;
       height: 6.2rem;
       // border: 1px red solid;
       @media @phone {
         width: 100%;
-        height: 3rem;
+        height: 4rem;
+        margin-bottom: 2rem;
       }
 
       @media @tinyPhone {
@@ -78,10 +79,10 @@ header {
         text-decoration: none;
         color: @green;
         font-size: 2rem;
-        @media @tablet{
+        @media @tablet {
           font-size: 2.3vw;
         }
-        @media @phone{
+        @media @phone {
           font-size: 2rem;
         }
         @media @tinyPhone {
@@ -100,8 +101,11 @@ header {
     align-items: center;
     background-color: @brown;
     height: 6.2rem;
-    width: 19.1%;
-    // border: 1px red solid;
+    width: 22.1%;
+
+    @media @tablet{
+      width:28%;
+    }
 
     @media @phone {
       flex-direction: column;
@@ -112,45 +116,45 @@ header {
       height: 8rem;
     }
 
-    .loginBtn {
-      a {
-        text-decoration: none;
-        color: @green;
-        &:hover {
-          text-decoration: none;
-          color: @white;
-        }
-      }
-      @media @phone {
-        width: 100%;
-      }
+    .Btn {
       .whiteBtn-params(@green, @white);
-    }
-
-    .loginBtn:hover {
-      
-      .hover-specs(@green, @white);
-    }
-
-    .registerBtn {
+      text-align: center;
       text-decoration: none;
-      a {
-        text-decoration: none;
-        color: @white;
-        &:hover {
-          text-decoration: none;
-          color: @green;
-        }
-      }
+      font-size: 1.6rem;
+      color: @green;
+      width: 49%;
+      padding: 1.3rem;
       @media @phone {
         width: 100%;
       }
-      .greenBtn-params(@white, @green);
     }
 
-    .registerBtn:hover {
-      
-      .hover-specs(@white, @green);
+    .Btn:hover {
+      .hover-specs(@green, @white);
+      a {
+        color: @white;
+      }
+    }
+
+    .Btn-Inverse {
+      .whiteBtn-params(@white, @green);
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.6rem;
+      width: 49%;
+      padding: 1.3rem;
+      @media @phone {
+        width: 100%;
+      }
+    }
+    .Btn-Inverse:hover {
+      .whiteBtn-params(@green, @white);
+      font-size: 1.6rem;
+      width: 49%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 }

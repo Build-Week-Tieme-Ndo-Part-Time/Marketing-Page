@@ -9,6 +9,9 @@ section {
   background-repeat: no-repeat;
   background-position: 50% 64%;
   height: 100rem;
+  @media @tablet{
+    height:75rem;
+  }
 
   @media @phone {
     padding-top: 18rem;
@@ -63,8 +66,13 @@ section {
   h1 {
     font-size: 5rem;
     color: @black;
+    @media @tablet{
+      padding-bottom:2rem;
+      display:none;
+    }
     @media @phone {
       font-size: 2rem;
+      display: inline;
     }
     @media @tinyPhone {
       display:none;
@@ -72,6 +80,7 @@ section {
   }
 
   button {
+    font-family: Montserrat;
     @media @tinyPhone {
       display:none;
     }
@@ -126,18 +135,25 @@ section{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 3rem;
-      @media @tablet{
-        }
+      padding: 2rem;
 
       h2{
-        padding-top:2rem;
+        font-size: 2vw;
         padding-top:.5rem;
         @media @tablet{
-         }
+          font-size:2.2rem;
+        }
       }
       p{
         padding-top: 1rem;
+        font-size:1.5vw;
+        @media @tablet{
+          font-size:1rem;
+        }
+        @media @phone{
+          font-size:1.5rem;
+          padding-bottom:2rem;
+        }
       }
       @media @phone {
         padding: 0;
@@ -169,14 +185,27 @@ section{
 
     .bottomContent {
       display: flex;
-      justify-content: space-around;
       flex-direction: column;
-      padding: 3rem;
+      justify-content: space-around;
+      padding: 2rem;
+    
       h2{
-        padding-top:2rem;
+        font-size: 2vw;
+        padding-top:.5rem;
+        @media @tablet{
+          font-size:2.2rem;
+        }
       }
       p{
-        padding-top: 2rem;
+        padding-top: 1rem;
+        font-size:1.5vw;
+        @media @tablet{
+          font-size:1rem;
+        }
+        @media @phone{
+          font-size:1.5rem;
+          padding-bottom:2rem;
+        }
       }
       @media @phone {
         padding: 0;
