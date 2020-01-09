@@ -317,7 +317,7 @@ header .navigation nav a:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
-header .topButtons {
+header .navigation .topButtons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -326,22 +326,22 @@ header .topButtons {
   width: 22.1%;
 }
 @media (max-width: 799px) {
-  header .topButtons {
+  header .navigation .topButtons {
     width: 28%;
   }
 }
 @media (max-width: 500px) {
-  header .topButtons {
+  header .navigation .topButtons {
     flex-direction: column;
     width: 100%;
   }
 }
 @media (max-width: 300px) {
-  header .topButtons {
+  header .navigation .topButtons {
     height: 8rem;
   }
 }
-header .topButtons .Btn {
+header .navigation .topButtons .Btn {
   font-size: 1.8rem;
   width: 13rem;
   background-color: #ffffff;
@@ -355,18 +355,18 @@ header .topButtons .Btn {
   padding: 1.3rem;
 }
 @media (max-width: 500px) {
-  header .topButtons .Btn {
+  header .navigation .topButtons .Btn {
     width: 100%;
   }
 }
-header .topButtons .Btn:hover {
+header .navigation .topButtons .Btn:hover {
   background: #46d2a3;
   color: #ffffff;
 }
-header .topButtons .Btn:hover a {
+header .navigation .topButtons .Btn:hover a {
   color: #ffffff;
 }
-header .topButtons .Btn-Inverse {
+header .navigation .topButtons .Btn-Inverse {
   font-size: 1.8rem;
   color: #ffffff;
   width: 13rem;
@@ -380,11 +380,11 @@ header .topButtons .Btn-Inverse {
   padding: 1.3rem;
 }
 @media (max-width: 500px) {
-  header .topButtons .Btn-Inverse {
+  header .navigation .topButtons .Btn-Inverse {
     width: 100%;
   }
 }
-header .topButtons .Btn-Inverse:hover {
+header .navigation .topButtons .Btn-Inverse:hover {
   font-size: 1.8rem;
   color: #46d2a3;
   width: 13rem;
@@ -396,7 +396,7 @@ header .topButtons .Btn-Inverse:hover {
   width: 49%;
 }
 @media (max-width: 500px) {
-  header .topButtons .Btn-Inverse:hover {
+  header .navigation .topButtons .Btn-Inverse:hover {
     width: 100%;
   }
 }

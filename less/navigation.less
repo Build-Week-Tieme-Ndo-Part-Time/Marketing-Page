@@ -94,67 +94,68 @@ header {
         .shake;
       }
     }
-  }
-  .topButtons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: @brown;
-    height: 6.2rem;
-    width: 22.1%;
+  
+    .topButtons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: @brown;
+      height: 6.2rem;
+      width: 22.1%;
 
-    @media @tablet{
-      width:28%;
-    }
-
-    @media @phone {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    @media @tinyPhone {
-      height: 8rem;
-    }
-
-    .Btn {
-      .whiteBtn-params(@green, @white);
-      text-align: center;
-      text-decoration: none;
-      font-size: 1.6rem;
-      color: @green;
-      width: 49%;
-      padding: 1.3rem;
-      @media @phone {
-        width: 100%;
+      @media @tablet{
+        width:28%;
       }
-    }
-
-    .Btn:hover {
-      .hover-specs(@green, @white);
-      a {
-        color: @white;
-      }
-    }
-
-    .Btn-Inverse {
-      .whiteBtn-params(@white, @green);
-      text-align: center;
-      text-decoration: none;
-      font-size: 1.6rem;
-      width: 49%;
-      padding: 1.3rem;
-      @media @phone {
-        width: 100%;
-      }
-    }
-    .Btn-Inverse:hover {
-      .whiteBtn-params(@green, @white);
-      font-size: 1.6rem;
-      width: 49%;
 
       @media @phone {
+        flex-direction: column;
         width: 100%;
       }
+
+      @media @tinyPhone {
+        height: 8rem;
+      }
+
+      .Btn {
+        .whiteBtn-params(@green, @white);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: @green;
+        width: 49%;
+        padding: 1.3rem;
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+      .Btn:hover {
+        .hover-specs(@green, @white);
+        a {
+          color: @white;
+        }
+      }
+
+      .Btn-Inverse {
+        .whiteBtn-params(@white, @green);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.6rem;
+        width: 49%;
+        padding: 1.3rem;
+        @media @phone {
+          width: 100%;
+        }
+      }
+      .Btn-Inverse:hover {
+        .whiteBtn-params(@green, @white);
+        font-size: 1.6rem;
+        width: 49%;
+
+        @media @phone {
+          width: 100%;
+        }
+      }
     }
-  }
+  }  
 }
