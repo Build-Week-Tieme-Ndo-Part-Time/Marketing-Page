@@ -9,8 +9,8 @@ section {
   background-repeat: no-repeat;
   background-position: 50% 64%;
   height: 100rem;
-  @media @tablet{
-    height:75rem;
+  @media @tablet {
+    height: 75rem;
   }
 
   @media @phone {
@@ -20,10 +20,8 @@ section {
     background-position: 50% 100%;
   }
   @media @tinyPhone {
-    height:2rem;
+    height: 2rem;
   }
-
-  
 
   img {
     width: 30rem;
@@ -31,7 +29,7 @@ section {
       width: 10rem;
     }
     @media @tinyPhone {
-      display:none
+      display: none;
     }
   }
   img:hover {
@@ -45,18 +43,18 @@ section {
     @media @phone {
       font-size: 3rem;
       padding-left: 1rem;
-    }  
+    }
     @media @tinyPhone {
-      display:none;
+      display: none;
     }
   }
 
   .logo {
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     @media @tinyPhone {
       display: flex;
       flex-direction: row;
@@ -66,23 +64,23 @@ section {
   h1 {
     font-size: 5rem;
     color: @black;
-    @media @tablet{
-      padding-bottom:2rem;
-      display:none;
+    @media @tablet {
+      padding-bottom: 2rem;
+      display: none;
     }
     @media @phone {
       font-size: 2rem;
       display: inline;
     }
     @media @tinyPhone {
-      display:none;
+      display: none;
     }
   }
 
   button {
     font-family: Montserrat;
     @media @tinyPhone {
-      display:none;
+      display: none;
     }
     .joinBtn-params(@white, @green);
   }
@@ -91,19 +89,18 @@ section {
     .hover-specs(@white, @green);
   }
 
-  button:focus {outline:0;}
-
-
+  button:focus {
+    outline: 0;
+  }
 }
 
-section{ 
-  
-  button{
-  .joinBtn-params(@white, @green);
+section {
+  button {
+    .joinBtn-params(@white, @green);
   }
 
- button:hover {
-  .hover-specs(@white, @green);
+  button:hover {
+    .hover-specs(@white, @green);
   }
 }
 
@@ -137,32 +134,32 @@ section{
       justify-content: space-around;
       padding: 2rem;
 
-      h2{
+      h2 {
         font-size: 2vw;
-        padding-top:.5rem;
-        @media @tablet{
-          font-size:2.2rem;
+        padding-top: 0.5rem;
+        @media @tablet {
+          font-size: 2.2rem;
         }
       }
-      p{
+      p {
         padding-top: 1rem;
-        font-size:1.5vw;
-        @media @tablet{
-          font-size:1rem;
+        font-size: 1.5vw;
+        @media @tablet {
+          font-size: 1rem;
         }
-        @media @phone{
-          font-size:1.5rem;
-          padding-bottom:2rem;
+        @media @phone {
+          font-size: 1.5rem;
+          padding-bottom: 2rem;
         }
       }
       @media @phone {
         padding: 0;
-      h2{
-        padding-top:2rem;
-      }
-      p{
-        padding-top: 2rem;
-      }
+        h2 {
+          padding-top: 2rem;
+        }
+        p {
+          padding-top: 2rem;
+        }
       }
     }
   }
@@ -188,38 +185,34 @@ section{
       flex-direction: column;
       justify-content: space-around;
       padding: 2rem;
-    
-      h2{
+
+      h2 {
         font-size: 2vw;
-        padding-top:.5rem;
-        @media @tablet{
-          font-size:2.2rem;
+        padding-top: 0.5rem;
+        @media @tablet {
+          font-size: 2.2rem;
         }
       }
-      p{
+      p {
         padding-top: 1rem;
-        font-size:1.5vw;
-        @media @tablet{
-          font-size:1rem;
+        font-size: 1.5vw;
+        @media @tablet {
+          font-size: 1rem;
         }
-        @media @phone{
-          font-size:1.5rem;
-          padding-bottom:2rem;
+        @media @phone {
+          font-size: 1.5rem;
+          padding-bottom: 2rem;
         }
       }
       @media @phone {
         padding: 0;
-      h2{
-        padding-top:2rem;
-      }
-      p{
-        padding-top: 2rem;
-      }
+        h2 {
+          padding-top: 2rem;
+        }
+        p {
+          padding-top: 2rem;
+        }
       }
     }
   }
 }
-
-
-
-
